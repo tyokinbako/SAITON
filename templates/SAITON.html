@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>チャットテスト</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>    .hukidasi{
+        color:blue;
+            Padding: 10px;
+            margin: 1%;
+            border: 1px solid black;
+            border-radius: 9999px;
+            text-align: left;
+            background-color: aliceblue;
+    }</style>
 </head>
 <body style="background-color: antiquewhite;">
     {% for Chat in Chats %}
-    <div>{{Chat.name}}さん　{{Chat.message}}</div>
+    <i class="hukidasi"><br> {{Chat.name}}さん <{{Chat.message}}<br></i>
     {% endfor %}
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,6 +49,7 @@
         <button type="submit" class="btn btn-primary btn-lg w-2 py-1 fs-">
             送信
         </button>
+        
   <textarea name="message" id="" cols="85" rows="3"></textarea>
 </form>
 </div>
