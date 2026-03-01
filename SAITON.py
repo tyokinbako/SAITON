@@ -15,7 +15,7 @@ def saiton():
 
 @app.route("/ZIRON")
 def saion():
-    return render_template("ZINRON.html", title="人狼")
+    return render_template("ZINRON.html", title="")
 
 @app.route("/Chat",methods=['POST'])
 def san():
