@@ -13,11 +13,17 @@
             border-radius: 9999px;
             text-align: left;
             background-color: aliceblue;
-    }</style>
+    }
+    .aaa{
+        margin-top: 20px;
+    }
+    </style>
 </head>
 <body style="background-color: antiquewhite;">
     {% for Chat in Chats %}
-    <i class="hukidasi"><br> {{Chat.name}}さん <{{Chat.message}}<br></i>
+    <div class="aaa">
+    <i class="hukidasi">{{Chat.name}}さん {{Chat.message}}</i>
+    </div>
     {% endfor %}
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
